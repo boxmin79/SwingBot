@@ -3,6 +3,7 @@ import json
 import os
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
+import time
 
 # .env 파일 로드
 load_dotenv()
@@ -113,6 +114,8 @@ class KiwoomAPI():
         API 호출 메인 함수.
         params.json의 정의에 따라 헤더와 바디를 구성하고 요청을 보냅니다.
         """
+        time.sleep(1) # 0.2초 대기 (초당 최대 5회 수준으로 조절)
+
         if api_id not in self.api_params:
             print(f"[오류] params.json에 '{api_id}' 키가 존재하지 않습니다.")
             return None
