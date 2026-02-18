@@ -1,0 +1,3278 @@
+{
+    "au10001": {
+        "api_id": "au10001",
+        "name": "접근토큰 발급",
+        "endpoint": "/oauth2/token",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "au10001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "grant_type": "client_credentials",
+            "appkey": "{appkey}",
+            "secretkey": "{secretkey}"
+        }
+    },
+    "au10002": {
+        "api_id": "au10002",
+        "name": "접근토큰폐기",
+        "endpoint": "/oauth2/revoke",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "au10002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "appkey": "{appkey}",
+            "secretkey": "{secretkey}",
+            "token": "{token}"
+        }
+    },
+    "ka00001": {
+        "api_id": "ka00001",
+        "name": "계좌번호조회",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka00001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {}
+    },
+    "ka00198": {
+        "api_id": "ka00198",
+        "name": "실시간종목조회순위",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka00198",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "qry_tp": "{qry_tp}"
+        }
+    },
+    "ka01690": {
+        "api_id": "ka01690",
+        "name": "일별잔고수익률",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka01690",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "qry_dt": "{qry_dt}"
+        }
+    },
+    "ka10001": {
+        "api_id": "ka10001",
+        "name": "주식기본정보요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10002": {
+        "api_id": "ka10002",
+        "name": "주식거래원요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10003": {
+        "api_id": "ka10003",
+        "name": "체결정보요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10004": {
+        "api_id": "ka10004",
+        "name": "주식호가요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10004",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10005": {
+        "api_id": "ka10005",
+        "name": "주식일주월시분요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10005",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10006": {
+        "api_id": "ka10006",
+        "name": "주식시분요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10006",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10007": {
+        "api_id": "ka10007",
+        "name": "시세표성정보요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10007",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10008": {
+        "api_id": "ka10008",
+        "name": "주식외국인종목별매매동향",
+        "endpoint": "/api/dostk/frgnistt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10008",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10009": {
+        "api_id": "ka10009",
+        "name": "주식기관요청",
+        "endpoint": "/api/dostk/frgnistt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10009",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10010": {
+        "api_id": "ka10010",
+        "name": "업종프로그램요청",
+        "endpoint": "/api/dostk/sect",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10010",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10011": {
+        "api_id": "ka10011",
+        "name": "신주인수권전체시세요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10011",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "newstk_recvrht_tp": "{newstk_recvrht_tp}"
+        }
+    },
+    "ka10013": {
+        "api_id": "ka10013",
+        "name": "신용매매동향요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10013",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "dt": "{dt}",
+            "qry_tp": "{qry_tp}"
+        }
+    },
+    "ka10014": {
+        "api_id": "ka10014",
+        "name": "공매도추이요청",
+        "endpoint": "/api/dostk/shsa",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10014",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tm_tp": "{tm_tp}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}"
+        }
+    },
+    "ka10015": {
+        "api_id": "ka10015",
+        "name": "일별거래상세요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10015",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}"
+        }
+    },
+    "ka10016": {
+        "api_id": "ka10016",
+        "name": "신고저가요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10016",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "ntl_tp": "{ntl_tp}",
+            "high_low_close_tp": "{high_low_close_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "crd_cnd": "{crd_cnd}",
+            "updown_incls": "{updown_incls}",
+            "dt": "{dt}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10017": {
+        "api_id": "ka10017",
+        "name": "상하한가요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10017",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "updown_tp": "{updown_tp}",
+            "sort_tp": "{sort_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "crd_cnd": "{crd_cnd}",
+            "trde_gold_tp": "{trde_gold_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10018": {
+        "api_id": "ka10018",
+        "name": "고저가근접요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10018",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "high_low_tp": "{high_low_tp}",
+            "alacc_rt": "{alacc_rt}",
+            "mrkt_tp": "{mrkt_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "crd_cnd": "{crd_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10019": {
+        "api_id": "ka10019",
+        "name": "가격급등락요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10019",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "flu_tp": "{flu_tp}",
+            "tm_tp": "{tm_tp}",
+            "tm": "{tm}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "crd_cnd": "{crd_cnd}",
+            "pric_cnd": "{pric_cnd}",
+            "updown_incls": "{updown_incls}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10020": {
+        "api_id": "ka10020",
+        "name": "호가잔량상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10020",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "sort_tp": "{sort_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "crd_cnd": "{crd_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10021": {
+        "api_id": "ka10021",
+        "name": "호가잔량급증요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10021",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "trde_tp": "{trde_tp}",
+            "sort_tp": "{sort_tp}",
+            "tm_tp": "{tm_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10022": {
+        "api_id": "ka10022",
+        "name": "잔량율급증요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10022",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "rt_tp": "{rt_tp}",
+            "tm_tp": "{tm_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10023": {
+        "api_id": "ka10023",
+        "name": "거래량급증요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10023",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "sort_tp": "{sort_tp}",
+            "tm_tp": "{tm_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "tm": "{tm}",
+            "stk_cnd": "{stk_cnd}",
+            "pric_tp": "{pric_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10024": {
+        "api_id": "ka10024",
+        "name": "거래량갱신요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10024",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "cycle_tp": "{cycle_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10025": {
+        "api_id": "ka10025",
+        "name": "매물대집중요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10025",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "prps_cnctr_rt": "{prps_cnctr_rt}",
+            "cur_prc_entry": "{cur_prc_entry}",
+            "prpscnt": "{prpscnt}",
+            "cycle_tp": "{cycle_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10026": {
+        "api_id": "ka10026",
+        "name": "고저PER요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10026",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "pertp": "{pertp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10027": {
+        "api_id": "ka10027",
+        "name": "전일대비등락률상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10027",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "sort_tp": "{sort_tp}",
+            "trde_qty_cnd": "{trde_qty_cnd}",
+            "stk_cnd": "{stk_cnd}",
+            "crd_cnd": "{crd_cnd}",
+            "updown_incls": "{updown_incls}",
+            "pric_cnd": "{pric_cnd}",
+            "trde_prica_cnd": "{trde_prica_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10028": {
+        "api_id": "ka10028",
+        "name": "시가대비등락률요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10028",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "sort_tp": "{sort_tp}",
+            "trde_qty_cnd": "{trde_qty_cnd}",
+            "mrkt_tp": "{mrkt_tp}",
+            "updown_incls": "{updown_incls}",
+            "stk_cnd": "{stk_cnd}",
+            "crd_cnd": "{crd_cnd}",
+            "trde_prica_cnd": "{trde_prica_cnd}",
+            "flu_cnd": "{flu_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10029": {
+        "api_id": "ka10029",
+        "name": "예상체결등락률상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10029",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "sort_tp": "{sort_tp}",
+            "trde_qty_cnd": "{trde_qty_cnd}",
+            "stk_cnd": "{stk_cnd}",
+            "crd_cnd": "{crd_cnd}",
+            "pric_cnd": "{pric_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10030": {
+        "api_id": "ka10030",
+        "name": "당일거래량상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10030",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "sort_tp": "{sort_tp}",
+            "mang_stk_incls": "{mang_stk_incls}",
+            "crd_tp": "{crd_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "pric_tp": "{pric_tp}",
+            "trde_prica_tp": "{trde_prica_tp}",
+            "mrkt_open_tp": "{mrkt_open_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10031": {
+        "api_id": "ka10031",
+        "name": "전일거래량상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10031",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "qry_tp": "{qry_tp}",
+            "rank_strt": "{rank_strt}",
+            "rank_end": "{rank_end}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10032": {
+        "api_id": "ka10032",
+        "name": "거래대금상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10032",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "mang_stk_incls": "{mang_stk_incls}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10033": {
+        "api_id": "ka10033",
+        "name": "신용비율상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10033",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "stk_cnd": "{stk_cnd}",
+            "updown_incls": "{updown_incls}",
+            "crd_cnd": "{crd_cnd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10034": {
+        "api_id": "ka10034",
+        "name": "외인기간별매매상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10034",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "trde_tp": "{trde_tp}",
+            "dt": "{dt}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10035": {
+        "api_id": "ka10035",
+        "name": "외인연속순매매상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10035",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "trde_tp": "{trde_tp}",
+            "base_dt_tp": "{base_dt_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10036": {
+        "api_id": "ka10036",
+        "name": "외인한도소진율증가상위",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10036",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "dt": "{dt}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10037": {
+        "api_id": "ka10037",
+        "name": "외국계창구매매상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10037",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "dt": "{dt}",
+            "trde_tp": "{trde_tp}",
+            "sort_tp": "{sort_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10038": {
+        "api_id": "ka10038",
+        "name": "종목별증권사순위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10038",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "qry_tp": "{qry_tp}",
+            "dt": "{dt}"
+        }
+    },
+    "ka10039": {
+        "api_id": "ka10039",
+        "name": "증권사별매매상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10039",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mmcm_cd": "{mmcm_cd}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "trde_tp": "{trde_tp}",
+            "dt": "{dt}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10040": {
+        "api_id": "ka10040",
+        "name": "당일주요거래원요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10040",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10042": {
+        "api_id": "ka10042",
+        "name": "순매수거래원순위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10042",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "qry_dt_tp": "{qry_dt_tp}",
+            "pot_tp": "{pot_tp}",
+            "dt": "{dt}",
+            "sort_base": "{sort_base}"
+        }
+    },
+    "ka10043": {
+        "api_id": "ka10043",
+        "name": "거래원매물대분석요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10043",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "qry_dt_tp": "{qry_dt_tp}",
+            "pot_tp": "{pot_tp}",
+            "dt": "{dt}",
+            "sort_base": "{sort_base}",
+            "mmcm_cd": "{mmcm_cd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10044": {
+        "api_id": "ka10044",
+        "name": "일별기관매매종목요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10044",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "trde_tp": "{trde_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10045": {
+        "api_id": "ka10045",
+        "name": "종목별기관매매추이요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10045",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "orgn_prsm_unp_tp": "{orgn_prsm_unp_tp}",
+            "for_prsm_unp_tp": "{for_prsm_unp_tp}"
+        }
+    },
+    "ka10046": {
+        "api_id": "ka10046",
+        "name": "체결강도추이시간별요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10046",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10047": {
+        "api_id": "ka10047",
+        "name": "체결강도추이일별요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10047",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10048": {
+        "api_id": "ka10048",
+        "name": "ELW일별민감도지표요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10048",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10050": {
+        "api_id": "ka10050",
+        "name": "ELW민감도지표요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10050",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10051": {
+        "api_id": "ka10051",
+        "name": "업종별투자자순매수요청",
+        "endpoint": "/api/dostk/sect",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10051",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "base_dt": "{base_dt}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10052": {
+        "api_id": "ka10052",
+        "name": "거래원순간거래량요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10052",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mmcm_cd": "{mmcm_cd}",
+            "stk_cd": "{stk_cd}",
+            "mrkt_tp": "{mrkt_tp}",
+            "qty_tp": "{qty_tp}",
+            "pric_tp": "{pric_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10053": {
+        "api_id": "ka10053",
+        "name": "당일상위이탈원요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10053",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10054": {
+        "api_id": "ka10054",
+        "name": "변동성완화장치발동종목요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10054",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "bf_mkrt_tp": "{bf_mkrt_tp}",
+            "stk_cd": "{stk_cd}",
+            "motn_tp": "{motn_tp}",
+            "skip_stk": "{skip_stk}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "min_trde_qty": "{min_trde_qty}",
+            "max_trde_qty": "{max_trde_qty}",
+            "trde_prica_tp": "{trde_prica_tp}",
+            "min_trde_prica": "{min_trde_prica}",
+            "max_trde_prica": "{max_trde_prica}",
+            "motn_drc": "{motn_drc}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10055": {
+        "api_id": "ka10055",
+        "name": "당일전일체결량요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10055",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tdy_pred": "{tdy_pred}"
+        }
+    },
+    "ka10058": {
+        "api_id": "ka10058",
+        "name": "투자자별일별매매종목요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10058",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "trde_tp": "{trde_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "invsr_tp": "{invsr_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10059": {
+        "api_id": "ka10059",
+        "name": "종목별투자자기관별요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10059",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dt": "{dt}",
+            "stk_cd": "{stk_cd}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "trde_tp": "{trde_tp}",
+            "unit_tp": "{unit_tp}"
+        }
+    },
+    "ka10060": {
+        "api_id": "ka10060",
+        "name": "종목별투자자기관별차트요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10060",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dt": "{dt}",
+            "stk_cd": "{stk_cd}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "trde_tp": "{trde_tp}",
+            "unit_tp": "{unit_tp}"
+        }
+    },
+    "ka10061": {
+        "api_id": "ka10061",
+        "name": "종목별투자자기관별합계요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10061",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "trde_tp": "{trde_tp}",
+            "unit_tp": "{unit_tp}"
+        }
+    },
+    "ka10062": {
+        "api_id": "ka10062",
+        "name": "동일순매매순위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10062",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "mrkt_tp": "{mrkt_tp}",
+            "trde_tp": "{trde_tp}",
+            "sort_cnd": "{sort_cnd}",
+            "unit_tp": "{unit_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10063": {
+        "api_id": "ka10063",
+        "name": "장중투자자별매매요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10063",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "invsr": "{invsr}",
+            "frgn_all": "{frgn_all}",
+            "smtm_netprps_tp": "{smtm_netprps_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10064": {
+        "api_id": "ka10064",
+        "name": "장중투자자별매매차트요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10064",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "trde_tp": "{trde_tp}",
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10065": {
+        "api_id": "ka10065",
+        "name": "장중투자자별매매상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10065",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "trde_tp": "{trde_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "orgn_tp": "{orgn_tp}"
+        }
+    },
+    "ka10066": {
+        "api_id": "ka10066",
+        "name": "장마감후투자자별매매요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10066",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "trde_tp": "{trde_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10068": {
+        "api_id": "ka10068",
+        "name": "대차거래추이요청",
+        "endpoint": "/api/dostk/slb",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10068",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "all_tp": "{all_tp}"
+        }
+    },
+    "ka10069": {
+        "api_id": "ka10069",
+        "name": "대차거래상위10종목요청",
+        "endpoint": "/api/dostk/slb",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10069",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "mrkt_tp": "{mrkt_tp}"
+        }
+    },
+    "ka10072": {
+        "api_id": "ka10072",
+        "name": "일자별종목별실현손익요청_일자",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10072",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}"
+        }
+    },
+    "ka10073": {
+        "api_id": "ka10073",
+        "name": "일자별종목별실현손익요청_기간",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10073",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}"
+        }
+    },
+    "ka10074": {
+        "api_id": "ka10074",
+        "name": "일자별실현손익요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10074",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}"
+        }
+    },
+    "ka10075": {
+        "api_id": "ka10075",
+        "name": "미체결요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10075",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "all_stk_tp": "{all_stk_tp}",
+            "trde_tp": "{trde_tp}",
+            "stk_cd": "{stk_cd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10076": {
+        "api_id": "ka10076",
+        "name": "체결요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10076",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "qry_tp": "{qry_tp}",
+            "sell_tp": "{sell_tp}",
+            "ord_no": "{ord_no}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10077": {
+        "api_id": "ka10077",
+        "name": "당일실현손익상세요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10077",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10078": {
+        "api_id": "ka10078",
+        "name": "증권사별종목매매동향요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10078",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mmcm_cd": "{mmcm_cd}",
+            "stk_cd": "{stk_cd}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}"
+        }
+    },
+    "ka10079": {
+        "api_id": "ka10079",
+        "name": "주식틱차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10079",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tic_scope": "{tic_scope}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka10080": {
+        "api_id": "ka10080",
+        "name": "주식분봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10080",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tic_scope": "{tic_scope}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka10081": {
+        "api_id": "ka10081",
+        "name": "주식일봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10081",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka10082": {
+        "api_id": "ka10082",
+        "name": "주식주봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10082",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka10083": {
+        "api_id": "ka10083",
+        "name": "주식월봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10083",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka10084": {
+        "api_id": "ka10084",
+        "name": "당일전일체결요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10084",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tdy_pred": "{tdy_pred}",
+            "tic_min": "{tic_min}",
+            "tm": "{tm}"
+        }
+    },
+    "ka10085": {
+        "api_id": "ka10085",
+        "name": "계좌수익률요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10085",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10086": {
+        "api_id": "ka10086",
+        "name": "일별주가요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10086",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "qry_dt": "{qry_dt}",
+            "indc_tp": "{indc_tp}"
+        }
+    },
+    "ka10087": {
+        "api_id": "ka10087",
+        "name": "시간외단일가요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10087",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10088": {
+        "api_id": "ka10088",
+        "name": "미체결 분할주문 상세",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10088",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "ord_no": "{ord_no}"
+        }
+    },
+    "ka10094": {
+        "api_id": "ka10094",
+        "name": "주식년봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10094",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka10095": {
+        "api_id": "ka10095",
+        "name": "관심종목정보요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10095",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10098": {
+        "api_id": "ka10098",
+        "name": "시간외단일가등락율순위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10098",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "sort_base": "{sort_base}",
+            "stk_cnd": "{stk_cnd}",
+            "trde_qty_cnd": "{trde_qty_cnd}",
+            "crd_cnd": "{crd_cnd}",
+            "trde_prica": "{trde_prica}"
+        }
+    },
+    "ka10099": {
+        "api_id": "ka10099",
+        "name": "종목정보 리스트",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10099",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}"
+        }
+    },
+    "ka10100": {
+        "api_id": "ka10100",
+        "name": "종목정보 조회",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10100",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka10101": {
+        "api_id": "ka10101",
+        "name": "업종코드 리스트",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10101",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}"
+        }
+    },
+    "ka10102": {
+        "api_id": "ka10102",
+        "name": "회원사 리스트",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10102",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {}
+    },
+    "ka10131": {
+        "api_id": "ka10131",
+        "name": "기관외국인연속매매현황요청",
+        "endpoint": "/api/dostk/frgnistt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10131",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dt": "{dt}",
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "mrkt_tp": "{mrkt_tp}",
+            "netslmt_tp": "{netslmt_tp}",
+            "stk_inds_tp": "{stk_inds_tp}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10170": {
+        "api_id": "ka10170",
+        "name": "당일매매일지요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10170",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "base_dt": "{base_dt}",
+            "ottks_tp": "{ottks_tp}",
+            "ch_crd_tp": "{ch_crd_tp}"
+        }
+    },
+    "ka10171": {
+        "api_id": "ka10171",
+        "name": "조건검색 목록조회",
+        "endpoint": "/api/dostk/websocket",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10171",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "trnm": "{trnm}"
+        }
+    },
+    "ka10172": {
+        "api_id": "ka10172",
+        "name": "조건검색 요청 일반",
+        "endpoint": "/api/dostk/websocket",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10172",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "trnm": "{trnm}",
+            "seq": "{seq}",
+            "search_type": "{search_type}",
+            "stex_tp": "{stex_tp}",
+            "cont_yn": "{cont_yn}",
+            "next_key": "{next_key}"
+        }
+    },
+    "ka10173": {
+        "api_id": "ka10173",
+        "name": "조건검색 요청 실시간",
+        "endpoint": "/api/dostk/websocket",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10173",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "trnm": "{trnm}",
+            "seq": "{seq}",
+            "search_type": "{search_type}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka10174": {
+        "api_id": "ka10174",
+        "name": "조건검색 실시간 해제",
+        "endpoint": "/api/dostk/websocket",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka10174",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "trnm": "{trnm}",
+            "seq": "{seq}"
+        }
+    },
+    "ka20001": {
+        "api_id": "ka20001",
+        "name": "업종현재가요청",
+        "endpoint": "/api/dostk/sect",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "inds_cd": "{inds_cd}"
+        }
+    },
+    "ka20002": {
+        "api_id": "ka20002",
+        "name": "업종별주가요청",
+        "endpoint": "/api/dostk/sect",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "inds_cd": "{inds_cd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka20003": {
+        "api_id": "ka20003",
+        "name": "전업종지수요청",
+        "endpoint": "/api/dostk/sect",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "inds_cd": "{inds_cd}"
+        }
+    },
+    "ka20004": {
+        "api_id": "ka20004",
+        "name": "업종틱차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20004",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "inds_cd": "{inds_cd}",
+            "tic_scope": "{tic_scope}"
+        }
+    },
+    "ka20005": {
+        "api_id": "ka20005",
+        "name": "업종분봉조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20005",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "inds_cd": "{inds_cd}",
+            "tic_scope": "{tic_scope}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka20006": {
+        "api_id": "ka20006",
+        "name": "업종일봉조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20006",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "inds_cd": "{inds_cd}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka20007": {
+        "api_id": "ka20007",
+        "name": "업종주봉조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20007",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "inds_cd": "{inds_cd}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka20008": {
+        "api_id": "ka20008",
+        "name": "업종월봉조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20008",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "inds_cd": "{inds_cd}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka20009": {
+        "api_id": "ka20009",
+        "name": "업종현재가일별요청",
+        "endpoint": "/api/dostk/sect",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20009",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "inds_cd": "{inds_cd}"
+        }
+    },
+    "ka20019": {
+        "api_id": "ka20019",
+        "name": "업종년봉조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20019",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "inds_cd": "{inds_cd}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka20068": {
+        "api_id": "ka20068",
+        "name": "대차거래추이요청(종목별)",
+        "endpoint": "/api/dostk/slb",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka20068",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "all_tp": "{all_tp}",
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka30001": {
+        "api_id": "ka30001",
+        "name": "ELW가격급등락요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "flu_tp": "{flu_tp}",
+            "tm_tp": "{tm_tp}",
+            "tm": "{tm}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "isscomp_cd": "{isscomp_cd}",
+            "bsis_aset_cd": "{bsis_aset_cd}",
+            "rght_tp": "{rght_tp}",
+            "lpcd": "{lpcd}",
+            "trde_end_elwskip": "{trde_end_elwskip}"
+        }
+    },
+    "ka30002": {
+        "api_id": "ka30002",
+        "name": "거래원별ELW순매매상위요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "isscomp_cd": "{isscomp_cd}",
+            "trde_qty_tp": "{trde_qty_tp}",
+            "trde_tp": "{trde_tp}",
+            "dt": "{dt}",
+            "trde_end_elwskip": "{trde_end_elwskip}"
+        }
+    },
+    "ka30003": {
+        "api_id": "ka30003",
+        "name": "ELWLP보유일별추이요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "bsis_aset_cd": "{bsis_aset_cd}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka30004": {
+        "api_id": "ka30004",
+        "name": "ELW괴리율요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30004",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "isscomp_cd": "{isscomp_cd}",
+            "bsis_aset_cd": "{bsis_aset_cd}",
+            "rght_tp": "{rght_tp}",
+            "lpcd": "{lpcd}",
+            "trde_end_elwskip": "{trde_end_elwskip}"
+        }
+    },
+    "ka30005": {
+        "api_id": "ka30005",
+        "name": "ELW조건검색요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30005",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "isscomp_cd": "{isscomp_cd}",
+            "bsis_aset_cd": "{bsis_aset_cd}",
+            "rght_tp": "{rght_tp}",
+            "lpcd": "{lpcd}",
+            "sort_tp": "{sort_tp}"
+        }
+    },
+    "ka30009": {
+        "api_id": "ka30009",
+        "name": "ELW등락율순위요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30009",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "sort_tp": "{sort_tp}",
+            "rght_tp": "{rght_tp}",
+            "trde_end_skip": "{trde_end_skip}"
+        }
+    },
+    "ka30010": {
+        "api_id": "ka30010",
+        "name": "ELW잔량순위요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30010",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "sort_tp": "{sort_tp}",
+            "rght_tp": "{rght_tp}",
+            "trde_end_skip": "{trde_end_skip}"
+        }
+    },
+    "ka30011": {
+        "api_id": "ka30011",
+        "name": "ELW근접율요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30011",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka30012": {
+        "api_id": "ka30012",
+        "name": "ELW종목상세정보요청",
+        "endpoint": "/api/dostk/elw",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka30012",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka40001": {
+        "api_id": "ka40001",
+        "name": "ETF수익율요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "etfobjt_idex_cd": "{etfobjt_idex_cd}",
+            "dt": "{dt}"
+        }
+    },
+    "ka40002": {
+        "api_id": "ka40002",
+        "name": "ETF종목정보요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka40003": {
+        "api_id": "ka40003",
+        "name": "ETF일별추이요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka40004": {
+        "api_id": "ka40004",
+        "name": "ETF전체시세요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40004",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "txon_type": "{txon_type}",
+            "navpre": "{navpre}",
+            "mngmcomp": "{mngmcomp}",
+            "txon_yn": "{txon_yn}",
+            "trace_idex": "{trace_idex}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka40006": {
+        "api_id": "ka40006",
+        "name": "ETF시간대별추이요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40006",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka40007": {
+        "api_id": "ka40007",
+        "name": "ETF시간대별체결요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40007",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka40008": {
+        "api_id": "ka40008",
+        "name": "ETF일자별체결요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40008",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka40009": {
+        "api_id": "ka40009",
+        "name": "ETF시간대별체결요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40009",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka40010": {
+        "api_id": "ka40010",
+        "name": "ETF시간대별추이요청",
+        "endpoint": "/api/dostk/etf",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka40010",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka50010": {
+        "api_id": "ka50010",
+        "name": "금현물체결추이",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50010",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka50012": {
+        "api_id": "ka50012",
+        "name": "금현물일별추이",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50012",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}"
+        }
+    },
+    "ka50079": {
+        "api_id": "ka50079",
+        "name": "금현물틱차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50079",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tic_scope": "{tic_scope}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka50080": {
+        "api_id": "ka50080",
+        "name": "금현물분봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50080",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tic_scope": "{tic_scope}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka50081": {
+        "api_id": "ka50081",
+        "name": "금현물일봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50081",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka50082": {
+        "api_id": "ka50082",
+        "name": "금현물주봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50082",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka50083": {
+        "api_id": "ka50083",
+        "name": "금현물월봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50083",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "base_dt": "{base_dt}",
+            "upd_stkpc_tp": "{upd_stkpc_tp}"
+        }
+    },
+    "ka50087": {
+        "api_id": "ka50087",
+        "name": "금현물예상체결",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50087",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka50091": {
+        "api_id": "ka50091",
+        "name": "금현물당일틱차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50091",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tic_scope": "{tic_scope}"
+        }
+    },
+    "ka50092": {
+        "api_id": "ka50092",
+        "name": "금현물당일분봉차트조회요청",
+        "endpoint": "/api/dostk/chart",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50092",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tic_scope": "{tic_scope}"
+        }
+    },
+    "ka50100": {
+        "api_id": "ka50100",
+        "name": "금현물 시세정보",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50100",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "ka50101": {
+        "api_id": "ka50101",
+        "name": "금현물 호가",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka50101",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "tic_scope": "{tic_scope}"
+        }
+    },
+    "ka52301": {
+        "api_id": "ka52301",
+        "name": "금현물투자자현황",
+        "endpoint": "/api/dostk/frgnistt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka52301",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {}
+    },
+    "ka90001": {
+        "api_id": "ka90001",
+        "name": "테마그룹별요청",
+        "endpoint": "/api/dostk/thme",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "qry_tp": "{qry_tp}",
+            "stk_cd": "{stk_cd}",
+            "date_tp": "{date_tp}",
+            "thema_nm": "{thema_nm}",
+            "flu_pl_amt_tp": "{flu_pl_amt_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90002": {
+        "api_id": "ka90002",
+        "name": "테마구성종목요청",
+        "endpoint": "/api/dostk/thme",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "date_tp": "{date_tp}",
+            "thema_grp_cd": "{thema_grp_cd}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90003": {
+        "api_id": "ka90003",
+        "name": "프로그램순매수상위50요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "trde_upper_tp": "{trde_upper_tp}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90004": {
+        "api_id": "ka90004",
+        "name": "종목별프로그램매매현황요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90004",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dt": "{dt}",
+            "mrkt_tp": "{mrkt_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90005": {
+        "api_id": "ka90005",
+        "name": "프로그램매매추이요청 시간대별",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90005",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "date": "{date}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "min_tic_tp": "{min_tic_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90006": {
+        "api_id": "ka90006",
+        "name": "프로그램매매차익잔고추이요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90006",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "date": "{date}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90007": {
+        "api_id": "ka90007",
+        "name": "프로그램매매누적추이요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90007",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "date": "{date}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90008": {
+        "api_id": "ka90008",
+        "name": "종목시간별프로그램매매추이요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90008",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "amt_qty_tp": "{amt_qty_tp}",
+            "stk_cd": "{stk_cd}",
+            "date": "{date}"
+        }
+    },
+    "ka90009": {
+        "api_id": "ka90009",
+        "name": "외국인기관매매상위요청",
+        "endpoint": "/api/dostk/rkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90009",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "mrkt_tp": "{mrkt_tp}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "qry_dt_tp": "{qry_dt_tp}",
+            "date": "{date}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90010": {
+        "api_id": "ka90010",
+        "name": "프로그램매매추이요청 일자별",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90010",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "date": "{date}",
+            "amt_qty_tp": "{amt_qty_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "min_tic_tp": "{min_tic_tp}",
+            "stex_tp": "{stex_tp}"
+        }
+    },
+    "ka90012": {
+        "api_id": "ka90012",
+        "name": "대차거래내역요청",
+        "endpoint": "/api/dostk/slb",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90012",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dt": "{dt}",
+            "mrkt_tp": "{mrkt_tp}"
+        }
+    },
+    "ka90013": {
+        "api_id": "ka90013",
+        "name": "종목일별프로그램매매추이요청",
+        "endpoint": "/api/dostk/mrkcond",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "ka90013",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "amt_qty_tp": "{amt_qty_tp}",
+            "stk_cd": "{stk_cd}",
+            "date": "{date}"
+        }
+    },
+    "kt00001": {
+        "api_id": "kt00001",
+        "name": "예수금상세현황요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "qry_tp": "{qry_tp}"
+        }
+    },
+    "kt00002": {
+        "api_id": "kt00002",
+        "name": "일별추정예탁자산현황요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "start_dt": "{start_dt}",
+            "end_dt": "{end_dt}"
+        }
+    },
+    "kt00003": {
+        "api_id": "kt00003",
+        "name": "추정자산조회요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "qry_tp": "{qry_tp}"
+        }
+    },
+    "kt00004": {
+        "api_id": "kt00004",
+        "name": "계좌평가현황요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00004",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "qry_tp": "{qry_tp}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt00005": {
+        "api_id": "kt00005",
+        "name": "체결잔고요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00005",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt00007": {
+        "api_id": "kt00007",
+        "name": "계좌별주문체결내역상세요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00007",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "ord_dt": "{ord_dt}",
+            "qry_tp": "{qry_tp}",
+            "stk_bond_tp": "{stk_bond_tp}",
+            "sell_tp": "{sell_tp}",
+            "stk_cd": "{stk_cd}",
+            "fr_ord_no": "{fr_ord_no}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt00008": {
+        "api_id": "kt00008",
+        "name": "계좌별익일결제예정내역요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00008",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dcd_seq": "{strt_dcd_seq}"
+        }
+    },
+    "kt00009": {
+        "api_id": "kt00009",
+        "name": "계좌별주문체결현황요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00009",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "ord_dt": "{ord_dt}",
+            "stk_bond_tp": "{stk_bond_tp}",
+            "mrkt_tp": "{mrkt_tp}",
+            "sell_tp": "{sell_tp}",
+            "qry_tp": "{qry_tp}",
+            "stk_cd": "{stk_cd}",
+            "fr_ord_no": "{fr_ord_no}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt00010": {
+        "api_id": "kt00010",
+        "name": "주문인출가능금액요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00010",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "io_amt": "{io_amt}",
+            "stk_cd": "{stk_cd}",
+            "trde_tp": "{trde_tp}",
+            "trde_qty": "{trde_qty}",
+            "uv": "{uv}",
+            "exp_buy_unp": "{exp_buy_unp}"
+        }
+    },
+    "kt00011": {
+        "api_id": "kt00011",
+        "name": "증거금율별주문가능수량조회요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00011",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "uv": "{uv}"
+        }
+    },
+    "kt00012": {
+        "api_id": "kt00012",
+        "name": "신용보증금율별주문가능수량조회요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00012",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "uv": "{uv}"
+        }
+    },
+    "kt00013": {
+        "api_id": "kt00013",
+        "name": "증거금세부내역조회요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00013",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {}
+    },
+    "kt00015": {
+        "api_id": "kt00015",
+        "name": "위탁종합거래내역요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00015",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "tp": "{tp}",
+            "stk_cd": "{stk_cd}",
+            "crnc_cd": "{crnc_cd}",
+            "gds_tp": "{gds_tp}",
+            "frgn_stex_code": "{frgn_stex_code}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt00016": {
+        "api_id": "kt00016",
+        "name": "일별계좌수익률상세현황요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00016",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "fr_dt": "{fr_dt}",
+            "to_dt": "{to_dt}"
+        }
+    },
+    "kt00017": {
+        "api_id": "kt00017",
+        "name": "계좌별당일현황요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00017",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {}
+    },
+    "kt00018": {
+        "api_id": "kt00018",
+        "name": "계좌평가잔고내역요청",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt00018",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "qry_tp": "{qry_tp}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt10000": {
+        "api_id": "kt10000",
+        "name": "주식 매수주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10000",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "stk_cd": "{stk_cd}",
+            "ord_qty": "{ord_qty}",
+            "ord_uv": "{ord_uv}",
+            "trde_tp": "{trde_tp}",
+            "cond_uv": "{cond_uv}"
+        }
+    },
+    "kt10001": {
+        "api_id": "kt10001",
+        "name": "주식 매도주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "stk_cd": "{stk_cd}",
+            "ord_qty": "{ord_qty}",
+            "ord_uv": "{ord_uv}",
+            "trde_tp": "{trde_tp}",
+            "cond_uv": "{cond_uv}"
+        }
+    },
+    "kt10002": {
+        "api_id": "kt10002",
+        "name": "주식 정정주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "orig_ord_no": "{orig_ord_no}",
+            "stk_cd": "{stk_cd}",
+            "mdfy_qty": "{mdfy_qty}",
+            "mdfy_uv": "{mdfy_uv}",
+            "mdfy_cond_uv": "{mdfy_cond_uv}"
+        }
+    },
+    "kt10003": {
+        "api_id": "kt10003",
+        "name": "주식 취소주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "orig_ord_no": "{orig_ord_no}",
+            "stk_cd": "{stk_cd}",
+            "cncl_qty": "{cncl_qty}"
+        }
+    },
+    "kt10006": {
+        "api_id": "kt10006",
+        "name": "신용 매수주문",
+        "endpoint": "/api/dostk/crdordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10006",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "stk_cd": "{stk_cd}",
+            "ord_qty": "{ord_qty}",
+            "ord_uv": "{ord_uv}",
+            "trde_tp": "{trde_tp}",
+            "cond_uv": "{cond_uv}"
+        }
+    },
+    "kt10007": {
+        "api_id": "kt10007",
+        "name": "신용 매도주문",
+        "endpoint": "/api/dostk/crdordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10007",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "stk_cd": "{stk_cd}",
+            "ord_qty": "{ord_qty}",
+            "ord_uv": "{ord_uv}",
+            "trde_tp": "{trde_tp}",
+            "crd_deal_tp": "{crd_deal_tp}",
+            "crd_loan_dt": "{crd_loan_dt}",
+            "cond_uv": "{cond_uv}"
+        }
+    },
+    "kt10008": {
+        "api_id": "kt10008",
+        "name": "신용 정정주문",
+        "endpoint": "/api/dostk/crdordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10008",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "orig_ord_no": "{orig_ord_no}",
+            "stk_cd": "{stk_cd}",
+            "mdfy_qty": "{mdfy_qty}",
+            "mdfy_uv": "{mdfy_uv}",
+            "mdfy_cond_uv": "{mdfy_cond_uv}"
+        }
+    },
+    "kt10009": {
+        "api_id": "kt10009",
+        "name": "신용 취소주문",
+        "endpoint": "/api/dostk/crdordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt10009",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "dmst_stex_tp": "{dmst_stex_tp}",
+            "orig_ord_no": "{orig_ord_no}",
+            "stk_cd": "{stk_cd}",
+            "cncl_qty": "{cncl_qty}"
+        }
+    },
+    "kt20016": {
+        "api_id": "kt20016",
+        "name": "신용융자 가능종목요청",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt20016",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "crd_stk_grde_tp": "{crd_stk_grde_tp}",
+            "mrkt_deal_tp": "{mrkt_deal_tp}",
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "kt20017": {
+        "api_id": "kt20017",
+        "name": "신용융자 가능문의",
+        "endpoint": "/api/dostk/stkinfo",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt20017",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "kt50000": {
+        "api_id": "kt50000",
+        "name": "금현물 매수주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50000",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "ord_qty": "{ord_qty}",
+            "ord_uv": "{ord_uv}",
+            "trde_tp": "{trde_tp}"
+        }
+    },
+    "kt50001": {
+        "api_id": "kt50001",
+        "name": "금현물 매도주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50001",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "ord_qty": "{ord_qty}",
+            "ord_uv": "{ord_uv}",
+            "trde_tp": "{trde_tp}"
+        }
+    },
+    "kt50002": {
+        "api_id": "kt50002",
+        "name": "금현물 정정주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50002",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "stk_cd": "{stk_cd}",
+            "orig_ord_no": "{orig_ord_no}",
+            "mdfy_qty": "{mdfy_qty}",
+            "mdfy_uv": "{mdfy_uv}"
+        }
+    },
+    "kt50003": {
+        "api_id": "kt50003",
+        "name": "금현물 취소주문",
+        "endpoint": "/api/dostk/ordr",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50003",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "orig_ord_no": "{orig_ord_no}",
+            "stk_cd": "{stk_cd}",
+            "cncl_qty": "{cncl_qty}"
+        }
+    },
+    "kt50020": {
+        "api_id": "kt50020",
+        "name": "금현물 잔고확인",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50020",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {}
+    },
+    "kt50021": {
+        "api_id": "kt50021",
+        "name": "금현물 예수금",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50021",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {}
+    },
+    "kt50030": {
+        "api_id": "kt50030",
+        "name": "금현물 주문체결전체조회",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50030",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "ord_dt": "{ord_dt}",
+            "qry_tp": "{qry_tp}",
+            "mrkt_deal_tp": "{mrkt_deal_tp}",
+            "stk_bond_tp": "{stk_bond_tp}",
+            "slby_tp": "{slby_tp}",
+            "stk_cd": "{stk_cd}",
+            "fr_ord_no": "{fr_ord_no}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt50031": {
+        "api_id": "kt50031",
+        "name": "금현물 주문체결조회",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50031",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "ord_dt": "{ord_dt}",
+            "qry_tp": "{qry_tp}",
+            "stk_bond_tp": "{stk_bond_tp}",
+            "sell_tp": "{sell_tp}",
+            "stk_cd": "{stk_cd}",
+            "fr_ord_no": "{fr_ord_no}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    },
+    "kt50032": {
+        "api_id": "kt50032",
+        "name": "금현물 거래내역조회",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50032",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "strt_dt": "{strt_dt}",
+            "end_dt": "{end_dt}",
+            "tp": "{tp}",
+            "stk_cd": "{stk_cd}"
+        }
+    },
+    "kt50075": {
+        "api_id": "kt50075",
+        "name": "금현물 미체결조회",
+        "endpoint": "/api/dostk/acnt",
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "api-id": "kt50075",
+            "authorization": "{authorization}",
+            "cont-yn": "{cont-yn}",
+            "next-key": "{next-key}"
+        },
+        "body": {
+            "ord_dt": "{ord_dt}",
+            "qry_tp": "{qry_tp}",
+            "mrkt_deal_tp": "{mrkt_deal_tp}",
+            "stk_bond_tp": "{stk_bond_tp}",
+            "sell_tp": "{sell_tp}",
+            "stk_cd": "{stk_cd}",
+            "fr_ord_no": "{fr_ord_no}",
+            "dmst_stex_tp": "{dmst_stex_tp}"
+        }
+    }
+}
