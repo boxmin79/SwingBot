@@ -23,15 +23,15 @@ def filter_backtest_results(input_file, output_file):
     df_active['Sharpe Ratio'] = pd.to_numeric(df_active['Sharpe Ratio'].replace([np.inf, -np.inf], np.nan), errors='coerce')
     
     # 3. 필터링 기준 설정
-    market_benchmark = 195.6  # 10년치 코스피 수익률 근사치
+    market_benchmark = 112.5 # 1년 코스피 수익률 #195.6 10년치 코스피 수익률 근사치
     min_sharpe = 0.7
     min_trades = 10
     
     # 4. 필터 적용
     filtered_df = df_active[
         (df_active['Total Return [%]'] >= market_benchmark) &
-        (df_active['Sharpe Ratio'] >= min_sharpe) &
-        (df_active['Total Trades'] >= min_trades)
+        (df_active['Sharpe Ratio'] >= min_sharpe) # &
+        # (df_active['Total Trades'] >= min_trades)
     ].copy()
     
     # 5. 결과 정렬 (수익률 높은 순)
@@ -61,7 +61,7 @@ def filter_backtest_results(input_file, output_file):
 # 실행부
 if __name__ == "__main__":
     # 파일명은 실제 파일명에 맞게 수정하여 사용하세요.
-    input_filename = 'data/backtest/bollingerband/summary/slope_summary_20260219_164733.csv'
-    output_filename = 'elite_tickers_sharpe_07.csv'
+    input_filename = 'data/backtest/bollingerband/summary/slope_summary_from_20250219_20260219_182347.csv'
+    output_filename = 'data/backtest/bollingerband/elite_tickers_sharpe_07.csv'
     
     elite_list = filter_backtest_results(input_filename, output_filename)
